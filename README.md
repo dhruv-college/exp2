@@ -6,7 +6,7 @@ To develop a Django application to store and retrieve data from a Movies Databas
 
 ## ENTITY RELATIONSHIP DIAGRAM
 
-
+![image-2](https://github.com/user-attachments/assets/81beb1fc-e11c-4adc-8fac-354c14854d81)
 
 ## DESIGN STEPS
 
@@ -24,7 +24,13 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ```
-
+class Student(models.Model):
+    user=models.CharField(max_length=100,primary_key=True)
+    password=models.CharField(max_length=100)
+    email=models.EmailField()
+    phone=models.CharField(max_length=100)
+    profile=models.ImageField(upload_to='profile/')
+    address=models.TextField() 
 ```
 ## OUTPUT
 
